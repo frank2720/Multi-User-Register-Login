@@ -12,17 +12,9 @@ require_once __DIR__.'/../src/register.php';
     <div class="position-relative">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner py-4">
-		
-		
-          <!-- Register Card  المربع الابيض-->
+	
           <div class="card p-2">
 
-          <!-- Logo -->
-            <div class="app-brand justify-content-center mt-5">
-              <a href="index.html" class="app-brand-link gap-2"> <!-- رابط الصفحة الاولى-->
-                <span class="app-brand-text demo text-heading fw-semibold">Qafir Application</span></a>
-            </div>
-            <!-- /Logo -->
             <div class="card-body mt-2">
               
 
@@ -102,7 +94,7 @@ require_once __DIR__.'/../src/register.php';
                 </div>
                   
                 <div class="mb-3">
-                  <div class="form-check">
+                  <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="terms-conditions" name="agree" value="checked" <?= $inputs['agree'] ?? '' ?> />
                     <label class="form-check-label" for="terms-conditions">
                       I agree to
@@ -111,7 +103,9 @@ require_once __DIR__.'/../src/register.php';
                     <small><?= $errors['agree'] ?? '' ?></small>
                   </div>
                 </div>
-                <button class="btn btn-primary d-grid w-100">Sign up</button>
+                <div class="mb-3">
+                    <center><button class="btn rounded-pill btn-outline-success" type="submit" style="background-color: #B5C268; color: black">Register</button></center>
+                </div>
               </form>
 
               <p class="text-center">
