@@ -1,2 +1,2 @@
-![Alt text](images/example.png)
-![Alt text](images/example2.png)
+![Alt text](images/login.png)
+![Alt text](images/register.png)
